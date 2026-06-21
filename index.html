@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello my cutie</title>
+  <link rel="shortcut icon" href="photo/we2.png" type="image/x-icon">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #66c7ea , #6ce608);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px; /* prevents content from touching edges */
+      box-sizing: border-box;
+    }
+
+    .login-container {
+      background-image: url("photo/we2.png");
+      background-size: cover;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 350px; /* flexible width */
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      color: hsl(175, 91%, 47%);
+      font-size: 1.5em;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #555;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.1);
+      font-size: 1em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .login-container input:focus {
+      outline: none;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+    }
+
+    .login-container a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      color: white;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .login-container a:hover {
+      background: #fff;
+      color: black;
+    }
+
+    .login-container p {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #333;
+    }
+
+    .login-container p a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    /* Tablet adjustments */
+    @media (max-width: 768px) {
+      .login-container {
+        padding: 25px;
+      }
+      .login-container h2 {
+        font-size: 1.3em;
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 20px;
+      }
+      .login-container h2 {
+        font-size: 1.2em;
+      }
+      .login-container a {
+        font-size: 1em;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Love Form</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <a href="Login.html">Love in</a>
+    </form>
+    <p>Forgot your password? <b href="#">Click here</b></p>
+  </div>
+</body>
+</html>
